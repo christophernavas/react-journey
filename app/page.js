@@ -15,7 +15,7 @@ function FilteredCards() {
       : REACT_CARDS.filter((card) => card.category === currentFilter);
 
   return (
-    <div className="grid grid-cols-3 gap-5 pb-10 w-full h-full overflow-auto">
+    <div className="grid grid-cols-1 px-10 sm:grid-cols-2 lg:grid-cols-3 gap-5 pb-10 w-full h-full overflow-auto">
       {filteredMap.map((card) => (
         <Card
           key={card.name}
